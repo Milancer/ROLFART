@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title" (click)="test()">Server Perfomance</h4>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class=" text-primary">
+              <th>
+                Name
+              </th>
+              <th>
+                Cluster
+              </th>
+              <th>
+                CPU
+              </th>
+              <th>
+                RAM
+              </th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let content of contents; let i = index">
+                <td>
+                  Server {{i + 1}}
+                </td>
+                <td>
+                  Cluster1
+                </td>
+                <td>
+                  {{content.server}}%
+                </td>
+                <td>
+                  {{content.server * 79}}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
