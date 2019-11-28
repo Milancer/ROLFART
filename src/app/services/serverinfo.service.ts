@@ -11,8 +11,8 @@ export class ServerinfoService {
   constructor(private http: HttpClient) { }
 
   getServerInfo(){
-      const URL = ("http://127.0.0.1/preprod");
-      // const URL = ("http://localhost:8082?servers=10");
+      const URL = ("http://localhost:80/preprod");
+      //const URL = ("http://localhost:8082?servers=10");
       this.http.get(URL).subscribe(result => {
       this.jsonContent = result
     })
